@@ -1,16 +1,16 @@
 const blogList = document.querySelector(".blogList");
-export function makehtml(data){
-    const markup = data.map(item =>{
+
+export function makehtml(data) {
+    const markup = data.map(item => {
         return `
             <li>
-                <h1>${item.title}</h1>
-                <p>${item.author}</p>
+                <h1>${item.carMake} ${item.carModel} (${item.year})</h1>
+                <p>${item.description}</p>
                 <p>${item.date}</p>
-                <p>${item.article.text}</p>
                 <button class="delete" id="${item.id}">Delete</button>
-                 <button class="update" id="${item.id}">Update</button>
+                <button class="update" id="${item.id}">Update</button>
             </li>`;
-        }).join(" ");
+    }).join(" ");
     blogList.innerHTML = markup;
     return markup;
 }

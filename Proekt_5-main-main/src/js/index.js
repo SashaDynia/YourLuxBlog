@@ -1,3 +1,6 @@
 import { getBlog } from "./getBlogs";
 
-getBlog();
+// Fetch and display preloaded blogs when the website loads
+document.addEventListener("DOMContentLoaded", () => {
+    getBlog();
+});

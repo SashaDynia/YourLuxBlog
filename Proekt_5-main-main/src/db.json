@@ -1,14 +1,28 @@
 {
   "blogs": [
     {
-      "id": "9f99",
-      "title": "sfs",
-      "author": "sf",
-      "text": "sf",
-      "date": "2025-05-14T18:16:13.910Z",
-      "article": {
-        "text": "Gewewefgweg"
-      }
+      "id": 1,
+      "carMake": "Ferrari",
+      "carModel": "250 GTO",
+      "year": "1962",
+      "description": "An iconic Ferrari model known for its rarity and performance.",
+      "date": "2025-05-01T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "carMake": "Lamborghini",
+      "carModel": "Miura",
+      "year": "1966",
+      "description": "Often considered the world's first supercar with mid-engine design.",
+      "date": "2025-05-02T12:00:00Z"
+    },
+    {
+      "id": 3,
+      "carMake": "Bugatti",
+      "carModel": "Type 57SC Atlantic",
+      "year": "1936",
+      "description": "A fantastically rare and luxurious Bugatti model.",
+      "date": "2025-05-03T14:00:00Z"
     }
   ]
 }

@@ -4,16 +4,16 @@ const form = document.querySelector(".form");
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-    const title = form.elements.title.value;
-    const author = form.elements.author.value;
-    const mainContent = form.elements.mainContent.value;
+    const carMake = form.elements.carMake.value;
+    const carModel = form.elements.carModel.value;
+    const year = form.elements.year.value;
+    const description = form.elements.description.value;
 
     const postData = {
-        title,
-        author,
-        text: mainContent
-    }
+        carMake,
+        carModel,
+        year,
+        description
+    };
     createPost(postData);
 });
-
-

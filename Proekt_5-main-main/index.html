@@ -3,41 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YourLuxBlog</title>
+    <title>Rare Cars Chronicles</title>
 </head>
 <body>
     <header class="header">
-
+        <h1>Rare Cars Chronicles</h1>
+        <p>Discover the world's most unique and exotic automobiles</p>
     </header>
-    <main class="header">
+    <main>
         <form class="form">
-            <label for="title"></label>
-            <input class="form_input" id="title" type="text">
-            <label for="author">Автор</label>
-            <input class="form_input" id="author" type="text">
-            <label for="mainContent">Контент</label>
-            <input class="form_input" id="mainContent" type="text">
-            <button type="submit">Відправити</button>
+            <label for="carMake">Car Make</label>
+            <input class="form_input" id="carMake" name="carMake" type="text" placeholder="e.g., Ferrari" required>
+            <label for="carModel">Car Model</label>
+            <input class="form_input" id="carModel" name="carModel" type="text" placeholder="e.g., 250 GTO" required>
+            <label for="year">Year</label>
+            <input class="form_input" id="year" name="year" type="number" placeholder="e.g., 1962" required>
+            <label for="description">Description</label>
+            <textarea class="form_input" id="description" name="description" placeholder="Write a short description..." required></textarea>
+            <button type="submit">Submit</button>
         </form>
         <ul class="blogList">
+            <!-- Blog posts will be dynamically added here -->
         </ul>
-        <form class="update">
-            <label for="mainContent">Контент</label>
-            <input class="form_input" id="mainContent" type="text">
-            <button type="submit">Відправити</button>
-        </form>
-        <!-- <form class="form">
-            <label for="title">Назва</label>
-            <input class="form__input" id="title" type="text">
-            <label for="author">Автор</label>
-            <input class="form__input" id="author" type="text">
-            <label for="mainContent">Контент</label>
-            <input class="form__input" id="mainContent" type="text">
-            <button type="submit">Відправити</button>
-        </form> -->
     </main>
-    <footer class="header">
-
+    <footer>
+        <p>&copy; 2025 Rare Cars Chronicles. All rights reserved.</p>
     </footer>
     <script src="./src/js/takeData.js"></script>
     <script src="./src/js/index.js"></script>
